@@ -10,6 +10,7 @@ do
             "text": ":rotating_light: *Alert* \n *Pod Name:* _ $i _ \n *Status:* \` $status \` "
         }
 EOF
-        $($(curl -X POST  -H 'Content-type:application/json' --data @pod_status.json https://hooks.slack.com/services/curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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 2>/dev/null) 2>/dev/null) 
+        $($(curl -X POST  -H 'Content-type:application/json' --data @pod_status.json https://hooks.slack.com/services/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 2>/dev/null) 2>/dev/null) 
     fi
 done
+echo "Status Updated"
